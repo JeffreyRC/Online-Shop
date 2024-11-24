@@ -52,4 +52,14 @@ class ManagmentCart(val context: Context) {
         }
         return fee
     }
+
+    fun plusNumberItem(item: ItemsModel) {
+        TODO("Not yet implemented")
+    }
+
+    fun minusNumberItem(item: ItemsModel) {
+        TODO("Not yet implemented")
+    }
+
+
 }

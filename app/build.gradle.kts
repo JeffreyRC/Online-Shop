@@ -72,16 +72,19 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata")
     implementation("com.github.bumptech.glide:glide:4.12.0")
     implementation("com.google.code.gson:gson:2.9.1")
-
+    implementation("com.paypal.checkout:android-sdk:1.2.0")
     // ConstraintLayout para Compose
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0")
 
     // Librería Foundation para compatibilidad con el resto de Compose
     implementation("androidx.compose.foundation:foundation")
 
+
     // Firebase y otras dependencias de AndroidX
     implementation(libs.firebase.database)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation(libs.play.services.cast.tv)
+    implementation(libs.core)
 }

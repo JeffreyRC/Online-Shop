@@ -49,7 +49,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -83,6 +82,7 @@ class MainActivity : BaseActivity() {
 @Composable
 fun MainActivityScreen(onCartClick:()->Unit){
     val viewModel=MainViewModel()
+    val context = LocalContext.current
     val banners= remember { mutableStateListOf<SliderModel>() }
     val categories= remember { mutableStateListOf<CategoryModel>() }
     val recommended= remember { mutableStateListOf<ItemsModel>() }
